@@ -158,6 +158,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@compound-finance/compound-js@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@compound-finance/compound-js/-/compound-js-0.4.0.tgz#cb589103dd078321aad8d85232267c4db5edac8c"
+  integrity sha512-Om0jSfP2Q7bEz1gPR9tJ3z2lW6FADYRISv/mS39O6cCBsDKoPYLOj3E/HhNck8eSNL2jRYcgP7tYcZfXYbzYpQ==
+
 "@cspotcode/source-map-consumer@0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@cspotcode/source-map-consumer/-/source-map-consumer-0.8.0.tgz#33bf4b7b39c178821606f669bbc447a6a629786b"
@@ -1305,7 +1310,7 @@ async-eventemitter@^0.2.2:
   dependencies:
     async "^2.4.0"
 
-"async-eventemitter@github:ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c":
+async-eventemitter@ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c:
   version "0.2.3"
   resolved "https://codeload.github.com/ahultgren/async-eventemitter/tar.gz/fa06e39e56786ba541c180061dbf2c0a5bbf951c"
   dependencies:
@@ -10157,7 +10162,6 @@ ws@^3.0.0:
 
 "wyvern-js@git+https://github.com/ProjectOpenSea/wyvern-js.git#v3.2.1":
   version "3.2.0"
-  uid fabb7660f23f2252c141077e32193d281036299e
   resolved "git+https://github.com/ProjectOpenSea/wyvern-js.git#fabb7660f23f2252c141077e32193d281036299e"
   dependencies:
     "0x.js" "^0.29.2"
