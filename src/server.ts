@@ -17,7 +17,7 @@ import { CompoundController } from './controllers/CompoundController'
 import { BasicAuthMiddleware } from './middlewares/BasicAuthMiddleware'
 
 export const startServer = (env: Env): https.Server | http.Server => {
-  const port = process.env.PORT || 3002
+  const port = process.env.PORT || 3013
   const app = express()
   const apiLimiter = rateLimit({
     windowMs: 60 * 1000, // 1 minute
@@ -31,7 +31,7 @@ export const startServer = (env: Env): https.Server | http.Server => {
   // *** TODO: filter by priviweb.tech origin if Env='prod' ***
   app.use(
     cors({
-      origin: env === 'devssl' ? 'https://backend-ddex-dev.privi.store' : '*',
+      origin: env === 'devssl' ? 'https://api-dev.privi.compound' : '*',
     })
   )
 
