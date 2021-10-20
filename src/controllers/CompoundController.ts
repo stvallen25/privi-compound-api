@@ -8,9 +8,10 @@ export class CompoundController {
   @Get('/compound/ctoken')
   async getCtokenList(@QueryParams() query: CTokenServiceRequest) {
     try {
-      const response = Compound.api.cToken(query)
+      const response = await Compound.api.cToken(query)
       return response
     } catch (e: any) {
+      console.log(e.message)
       throw new Error(e.message)
     }
   }
