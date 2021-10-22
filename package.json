@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "src/index.ts",
   "scripts": {
+    "start": "nodemon prod",
     "start:dev": "nodemon dev",
     "start:devssl": "nodemon devssl",
     "start:prod": "nodemon prod",
