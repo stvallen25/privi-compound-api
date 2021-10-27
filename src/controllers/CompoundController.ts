@@ -19,7 +19,7 @@ export class CompoundController {
   @Get('/compound/proposals')
   async getProposals(@QueryParams() query: GovernanceServiceRequest) {
     try {
-      const response = await Compound.api.cToken(query)
+      const response = await Compound.api.governance(query, 'proposals')
       return response
     } catch (e: any) {
       console.log(e.message)
